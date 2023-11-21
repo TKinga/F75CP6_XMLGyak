@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE F75CP6Lmodell SYSTEM "F75CP6_ertodtd.dtd">
+
+<F75CP6_modell>
+
+    <A a="a1">
+        <b>
+            <x></x>
+            <y></y>
+        </b>
+        <b>
+            <x></x>
+            <y></y>
+        </b>
+        <c>
+            <d></d>
+            <e></e>
+        </c>
+    </A>
+
+
+    <B a="b1" c="c1">
+        <b>
+            <x></x>
+            <y></y>
+        </b>
+    </B>
+    <C a="c1">
+        <b></b>
+    </C>
+    <AB aref="a1" bref="b1">
+        <c></c>
+    </AB>
+    
+</F75CP6_modell>

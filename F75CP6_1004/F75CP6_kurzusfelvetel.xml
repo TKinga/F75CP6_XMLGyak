@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<F75CP6_kurzusfelvetel tanev="2023/24 I." egyetem="Miskolci Egyetem"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="F75CP6_kurzusfelvetel.xsd">
+
+        <hallgato id="F75CP6">
+           <hnev>Tamás Kinga</hnev>
+           <szulev>2001</szulev>
+           <szak evf="3"> Gazdaságinformatikus</szak>    
+
+        </hallgato>
+
+        <kurzusok>
+
+            <kurzus id="GEIAL 130-B" jovahagyas="igen">
+                <kurzusnev>Mesterséges intelligencia</kurzusnev>
+                <kredit>5</kredit>
+                <hely>XXXII</hely>
+                <idopont>Kedd 10:00-12:00</idopont> 
+                <oktato>Fazekas Levente</oktato>
+            </kurzus>
+
+            <kurzus id="GEIAL 332-B" jovahagyas="igen">
+                <kurzusnev>Adatkezelés XML-ben</kurzusnev>
+                <kredit>5</kredit>
+                <hely>XXXII</hely>
+                <idopont>Kedd 12:00-14:00</idopont> 
+                <oktato>Dr. Bednarik László</oktato>
+            </kurzus>
+
+            <kurzus id="GEIAL 332-B" jovahagyas="igen">
+                <kurzusnev>Adatkezelés XML-ben</kurzusnev>
+                <kredit>5</kredit>
+                <hely>Inf. 101</hely>
+                <idopont>Szerda 10:00-12:00</idopont> 
+                <oktato>Dr. Bednarik László</oktato>
+            </kurzus>
+
+
+            <kurzus id="GTÜSZ601B-B" jovahagyas="igen">
+                <kurzusnev>Számvitel</kurzusnev>
+                <kredit>5</kredit>
+                <hely>XII. ea.</hely>
+                <idopont>Szerda 12:00-14:00</idopont> 
+                <oraado>Várkonyiné Dr.Juhász Mária</oraado>
+            </kurzus>
+
+            <kurzus id="GEIAL 315-B" jovahagyas="igen">
+                <kurzusnev>Vállalati információs rendszerek</kurzusnev>
+                <kredit>5</kredit>
+                <hely>Inf. 101.</hely>
+                <idopont>Szerda 14:00-16:00</idopont> 
+                <oraado>Sasvári Péter</oraado>
+            </kurzus>
+        </kurzusok>
+
+</F75CP6_kurzusfelvetel>

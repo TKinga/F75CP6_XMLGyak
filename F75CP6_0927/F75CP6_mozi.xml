@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<mozi>
+
+    <film  id="1" mufaj="horror"> 
+        <rendezo id="2" nev="Horváth László"/>
+        <szinesz id="3" nev="Kocsis Mariann"/>
+        <iro id="4" nev="Veréb László"/>
+    </film>
+
+</mozi>

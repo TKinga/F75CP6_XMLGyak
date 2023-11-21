@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <ora id="1" tipus="előadás">
+        <targy>Pénzügytan</targy>
+        <idopont>
+            <nap>hétfő</nap>
+            <tol>10</tol>
+            <ig>12</ig>
+        </idopont>
+        <helyszin>37.ea</helyszin>
+        <oktato>Dr. Bozsik István</oktato>
+        <szak>G3BGI</szak>
+    </ora>

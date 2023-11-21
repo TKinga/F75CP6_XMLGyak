@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<F75CP6_orarend>
+
+<ora id= "1"  tipus="előadás" >
+<targynev> Pénzügytan </targynev>
+<idopont>
+    <nap> hétfő </nap>
+    <kezdes> 10:00 </kezdes>
+    <befejezes> 12:00 </befejezes>
+</idopont>
+<oktato_neve> Dr. Bozsik Sándor </oktato_neve>
+<helyszin> XXXVII A3 és A5 között </helyszin>
+<szak> BGI </szak>
+</ora>
+
+
+<ora id= "2"  tipus="előadás" >
+<targynev> WEB technológiák </targynev>
+<idopont>
+    <nap> hétfő </nap>
+    <kezdes> 14:00 </kezdes>
+    <befejezes> 16:00 </befejezes>
+</idopont>
+<oktato_neve> Dr. Agárdi Anita </oktato_neve>
+<helyszin> XXX A1 III. em. 305	</helyszin>
+<szak> BGI </szak>
+</ora>
+
+
+<ora id= "3"  tipus="előadás" >
+<targynev> WEB technológiák </targynev>
+<idopont>
+    <nap> hétfő </nap>
+    <kezdes> 16:00 </kezdes>
+    <befejezes> 18:00 </befejezes>
+</idopont>
+<oktato_neve> Dr. Agárdi Anita </oktato_neve>
+<helyszin> XXX A1 III. em. 305	</helyszin>
+<szak> BGI </szak>
+</ora>
+
+
+<ora id= "4"  tipus="előadás" >
+<targynev> Számvitel </targynev>
+<idopont>
+    <nap> kedd </nap>
+    <kezdes> 8:00 </kezdes>
+    <befejezes> 10:00 </befejezes>
+</idopont>
+<oktato_neve> Dr. Pál Tibor </oktato_neve>
+<helyszin> VIII A1 I. em. 116	</helyszin>
+<szak> BGI </szak>
+</ora>
+
+
+
+<ora id= "5"  tipus="előadás" >
+<targynev> Mesterséges intelligencia</targynev>
+<idopont>
+    <nap> kedd </nap>
+    <kezdes> 10:00 </kezdes>
+    <befejezes> 12:00 </befejezes>
+</idopont>
+<oktato_neve> Kunné Dr. Tamás Judit </oktato_neve>
+<helyszin> XXXII A1 magasfsz</helyszin>
+<szak> BGI </szak>
+</ora>
+
+
+
+<ora id= "6"  tipus="előadás" >
+
+<targynev> Adatkezelés XML-ben </targynev>
+<idopont>
+    <nap> kedd </nap>
+    <kezdes> 12:00 </kezdes>
+    <befejezes> 14:00 </befejezes>
+</idopont>
+<oktato_neve> Dr. Bednarik László </oktato_neve>
+<helyszin> XXXII.ea </helyszin>
+<szak> BGI </szak>
+</ora>
+
+
+
+<ora id= "7"  tipus="gyakorlat" >
+<targynev> Pénzügytan </targynev>
+<idopont>
+    <nap> szerda </nap>
+    <kezdes> 8:00 </kezdes>
+    <befejezes> 10:00 </befejezes>
+</idopont>
+
+<oktato_neve> Dr. Süveges Gábor </oktato_neve>
+<helyszin> A1/204 A1 II. em. 204 </helyszin>
+<szak> BGI </szak>
+</ora>
+
+
+
+<ora id= "8"  tipus="gyakorlat" >
+<targynev> Adatkezelés XML-ben </targynev>
+<idopont>
+    <nap> szerda </nap>
+    <kezdes> 10:00 </kezdes>
+    <befejezes> 12:00 </befejezes>
+</idopont>
+<oktato_neve> Dr. Bednarik László </oktato_neve>
+<helyszin> Inf/101 fsz. </helyszin>
+<szak> BGI </szak>
+</ora>
+
+
+<ora id= "9"  tipus="gyakorlat" >
+<targynev> Számvitel </targynev>
+<idopont>
+    <nap> szerda </nap>
+    <kezdes> 12:00 </kezdes>
+    <befejezes> 14:00 </befejezes>
+</idopont>
+<oktato_neve> Várkonyiné Dr. Juhász Mária </oktato_neve>
+<helyszin> A3/312 III.em. XII.ea </helyszin>
+<szak> BGI </szak>
+</ora>
+
+
+<ora id= "9"  tipus="gyakorlat" >
+<targynev> Vállalati információs rendszerek fejlesztése</targynev>
+<idopont>
+    <nap> szerda </nap>
+    <kezdes> 14:00 </kezdes>
+    <befejezes> 16:00 </befejezes>
+</idopont>
+<oktato_neve> Dr. Sasvári Péter </oktato_neve>
+<helyszin> Inf/101 fsz. </helyszin>
+<szak> BGI </szak>
+</ora>
+
+</F75CP6_orarend>

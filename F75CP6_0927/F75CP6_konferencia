@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<F75CP6_konferencianaptar>
+
+    <konferencia>
+        <cim>Lakóhely újítás</cim>
+        <hallgatok>
+            <hallgato>
+                <nev>Trokár Tamás</nev>
+                <lakcim>3526 Miskolc, Liba utca 79.</lakcim>
+            </hallgato>
+            <hallgato>
+                <nev>Nagy Márk</nev>
+                <lakcim>3780 Edelény, Rimi út 1.</lakcim>
+            </hallgato>
+        </hallgatok>
+        <helyszin>Miskolc Népkert</helyszin>
+        <eloado>
+            <nev>Pampi Petra</nev>
+            <adoszam>55785678</adoszam>
+            <lakcim>2001 Dunaújváros, Csillag utca 78.</lakcim>
+        </eloado>
+        <datum>2023.08.25.</datum>
+    </konferencia>
+    
+</F75CP6_konferencianaptar>

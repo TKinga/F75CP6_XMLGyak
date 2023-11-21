@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT F75CP6_orarend(ora*)>
+
+<!ELEMENT ora(targynev, idopont, oktato, helyszin, szak)
+        <!ATTLIST ora id ID #REQUIRED tipus (eloadas | gyakorlat) "eloadas">
+
+<!ELEMENT targynev(#PCDATA)>     
+<!ELEMENT idopont(nap, tol, ig)>
+        <!ELEMENT nap(#PCDATA)>
+        <!ELEMENT tol(#PCDATA)>
+        <!ELEMENT ig(#PCDATA)>
+<!ELEMENT oktato(oktato_neve)>
+<!ELEMENT helyszin(#PCDATA)>
+<!ELEMENT szak(#PCDATA)>

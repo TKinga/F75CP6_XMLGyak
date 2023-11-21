@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<Fesztival_F75CP6 xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+xs:noNamespaceSchemaLocation="XMLSchemaF75CP6.xsd">
+
+
+    <fesztival FESZ_KOD ="1">
+        <nev>Balaton Sound</nev>
+        <helyszin>Zamárdi</helyszin>
+        <ev>2023</ev>
+    </fesztival>
+
+    <fesztival FESZ_KOD ="2">
+        <nev>EFOTT</nev>
+        <helyszin>Velencei-tó</helyszin>
+        <ev>2022</ev>
+    </fesztival>
+
+    <tulajdonos TUL_KOD="11" fesztival="1">
+        <nev>Fülöp Zoltán</nev>
+        <adoszam>98143562-3-11</adoszam>
+        <alapitas>2007</alapitas>
+        <bevetel>135479659</bevetel>
+    </tulajdonos>
+
+    <tulajdonos TUL_KOD="12" fesztival="2">
+        <nev>KISZ</nev>
+        <adoszam>18765498-5-25</adoszam>
+        <alapitas>1976</alapitas>
+        <bevetel>479587663</bevetel>
+    </tulajdonos>
+
+    <fellepo FEL_KOD="21" fesztival="2">
+        <nev> DJ Tiesto</nev>
+        <orszag>Hollandia</orszag>
+        <dij>550000</dij>
+    </fellepo>
+
+    <fellepo FEL_KOD="22" fesztival="1">
+        <nev>Azariah</nev>
+        <orszag>Magyarország</orszag>
+        <dij>1200000</dij>
+    </fellepo>
+
+    <resztvevo RESZTV_KOD="31" fesztival="1">
+        <nev>Dovics Dorina</nev>
+        <diakigazolvany>775864109</diakigazolvany>
+        <lakcim>
+            <telepules>Miskolc</telepules>
+            <utca>Szeretet</utca>
+            <hazszam>44</hazszam>
+        </lakcim>
+    </resztvevo>
+
+    <resztvevo RESZTV_KOD="32" fesztival="2">
+        <nev>Pócsi Ella</nev>
+        <lakcim>
+            <telepules>Budapest</telepules>
+            <utca>Vadvirág</utca>
+            <hazszam>5</hazszam>
+        </lakcim>
+    </resztvevo>
+
+    <nyelvtudas NY_KOD="41">
+        <nyelv>angol</nyelv>
+        <szint>C1</szint>
+    </nyelvtudas>
+    <nyelvtudas NY_KOD="2">
+        <nyelv>francia</nyelv>
+        <szint>B2</szint>
+    </nyelvtudas>
+
+    <kozvelemeny KOZL_KOD="51" megkerdezett="31" nyelvtudas="41">
+        <kerdezo>Tóth Antónia</kerdezo>
+    </kozvelemeny>
+
+    <kozvelemeny KOZL_KOD="52" megkerdezett="32" nyelvtudas="41">
+        <kerdezo>Czinke Edit</kerdezo>
+    </kozvelemeny>
+    
+    <kozvelemeny KOZL_KOD="53" megkerdezett="32" nyelvtudas="42">
+        <kerdezo>Tálas Tekla</kerdezo>
+    </kozvelemeny>
+
+    <bar BAR_KOD="61" fesztival="1">
+        <nev>Zamárdi Stand</nev>
+        <ital>Kókuszos vodka</ital>
+        <ital>Tequila</ital>
+        <ital>Peroni Nastro Azzurro</ital>
+        <ceg>BalatonZamat KFT</ceg>
+    </bar>
+
+    <bar BAR_KOD="62" fesztival="2">
+        <nev>Fiatalok Forever</nev>
+        <ital>Citromos Gin tonic</ital>
+        <ital>Whiskey</ital>
+        <ital>Watermelon shot</ital>
+        <ceg>Szegő Árpi KFT</ceg>
+    </bar>
+
+    <alkalmazott A_ID="71" munkahely="61">
+        <nev>Juhász György</nev>
+        <muszak>9-21</muszak>
+        <fizetes>28000</fizetes>
+    </alkalmazott>
+
+    <alkalmazott A_ID="72" munkahely="62">
+        <nev>Teleki Márta</nev>
+        <muszak>14-20</muszak>
+        <fizetes>17000</fizetes>
+    </alkalmazott>
+
+    
+</Fesztival_F75CP6>
