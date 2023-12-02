@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <!--Egyszerű típusok, saját típusok meghatározása-->
+
+
+    <xs:element name="fajtak" type="xs:string"/>
+    <xs:element name="leiras" type="xs:string"/>
+    <xs:element name="ar" type="xs:integer"/>
+    <xs:element name="datum" type="xs:date"/>
+    <xs:element name="modja" type="xs:string"/>
+    <xs:element name="szallitasi_koltseg" type="xs:integer"/>
+    <xs:element name="megjegyzes" type="xs:string"/>
+    <xs:element name="nev" type="xs:string"/>
+    <xs:element name="telepules" type="xs:string"/>
+    <xs:element name="utca" type="xs:string"/>
+    <xs:element name="hazszam" type="xs:integer"/>
+    <xs:element name="e-mail_cim" type="xs:string"/>
+    <xs:element name="telefonszam" type="xs:integer"/>
+    <xs:element name="minosites" type="minősítésTípus"/> 
+    <xs:element name="nyitva" type="xs:string"/>   
+
+    <xs:simpleType name="minősítésTípus">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1" />
+            <xs:maxInclusive value="5" />
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    
+    <!--Összetett típusok meghatározása-->
+
+    <xs:complexType name="termékekTípus" >
+        <xs:sequence>
+            <xs:element name="fajtak" type="xs:string"/>
+            <xs:element name="leiras" type="xs:string"/>
+            <xs:element ref="ar" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="Term_ID" type="xs:integer"/>
+        <xs:attribute name="Cukda_ID" type="xs:integer"/>
+        <xs:attribute name="Cuk_ID" type="xs:integer"/>
+        <xs:attribute name="Megr_ID" type="xs:integer"/>
+    </xs:complexType>
+
+
+    <xs:complexType name="csomagTípus">
+        <xs:sequence>
+            <xs:element ref="datum" />
+        </xs:sequence>
+        <xs:attribute name="Term_ID" type="xs:integer"/>
+        <xs:attribute name="Szall_ID" type="xs:integer"/>
+    </xs:complexType>
+
+
+    <xs:complexType name="szállításTípus">
+        <xs:sequence>
+            <xs:element ref="modja" />
+            <xs:element ref="szallitasi_koltseg" minOccurs="0" />
+            <xs:element name="megjegyzes" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="Szall_ID" type="xs:integer"/>
+    </xs:complexType>
+
+
+
+    <xs:complexType name="megrendelőTípus">
+        <xs:sequence>
+            <xs:element ref="nev"/>
+            <xs:element name="cim">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="telepules" type="xs:string"/>
+                        <xs:element name="utca" type="xs:string"/>
+                        <xs:element name="hazszam" type="xs:integer"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element ref="telefonszam" maxOccurs="unbounded"/>
+            <xs:element ref="e-mail_cim"/>
+        </xs:sequence>
+        <xs:attribute name="Megr_ID" type="xs:integer"/>
+        <xs:attribute name="Szall_ID" type="xs:integer"/>
+    </xs:complexType>
+
+
+    <xs:complexType name="cukrászTípus">
+        <xs:sequence>
+            <xs:element ref="nev"/>
+            <xs:element ref="minosites"/>
+            <xs:element ref="e-mail_cim"/>
+        </xs:sequence>
+        <xs:attribute name="Cuk_ID" type="xs:integer"/>
+        <xs:attribute name="Cukda_ID" type="xs:integer"/>
+    </xs:complexType>
+
+
+
+    <xs:complexType name="cukrászdaTípus">
+        <xs:sequence>
+            <xs:element ref="nev"/>
+            <xs:element ref="nyitva"/>
+        </xs:sequence>
+        <xs:attribute name="Cukda_ID" type="xs:integer"/>
+        <xs:attribute name="Tul_ID" type="xs:integer"/>
+    </xs:complexType>
+
+
+    <xs:complexType name="tulajdonosTípus">
+        <xs:sequence>
+            <xs:element ref="nev"/>
+            <xs:element ref="telefonszam"/>
+            <xs:element ref="e-mail_cim"/>
+        </xs:sequence>
+        <xs:attribute name="Tul_ID" type="xs:integer"/>
+    </xs:complexType>        
+
+
+
+
+<!--Gyökérelem meghatározása-->
+
+<xs:element name="F75CP6_Cukraszda">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="termekek" type="termékekTípus" maxOccurs="unbounded"/>
+            <xs:element name="csomag" type="csomagTípus" maxOccurs="unbounded"/>
+            <xs:element name="szallitas" type="szállításTípus" maxOccurs="unbounded"/>
+            <xs:element name="megrendelo" type="megrendelőTípus" maxOccurs="unbounded"/>
+            <xs:element name="cukrasz" type="cukrászTípus" maxOccurs="unbounded"/>
+            <xs:element name="cukraszda" type="cukrászdaTípus" maxOccurs="unbounded"/>
+            <xs:element name="tulajdonos" type="tulajdonosTípus" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+
+    <!--Elsődleges kulcsok-->
+
+    <xs:key name="termekekPK">
+        <xs:selector xpath="termekek"/>
+        <xs:field xpath="@Term_ID"/>
+    </xs:key>
+
+
+    <xs:key name="szállításPK">
+        <xs:selector xpath="szallitas"/>
+        <xs:field xpath="@Szall_ID"/>
+    </xs:key>
+
+
+    <xs:key name="megrendelőPK">
+        <xs:selector xpath="megrendelo"/>
+        <xs:field xpath="@Megr_ID"/>
+    </xs:key>
+
+
+    <xs:key name="cukrászPK">
+        <xs:selector xpath="cukrasz"/>
+        <xs:field xpath="@Cuk_ID"/>
+    </xs:key>
+
+
+    <xs:key name="cukrászdaPK">
+        <xs:selector xpath="cukraszda"/>
+        <xs:field xpath="@Cukda_ID"/>           
+    </xs:key>
+
+
+    <xs:key name="tulajdonosPK">
+        <xs:selector xpath="tulajdonos"/>
+        <xs:field xpath="@Tul_ID"/>     
+    </xs:key>
+
+
+    <!-- Idegen kulcsok -->
+
+
+    <xs:keyref name="cukrászdaTermékekFK" refer="cukrászdaPK">
+        <xs:selector xpath="termekek"/>
+        <xs:field xpath="@Cukda_ID"/>
+    </xs:keyref>
+
+    <xs:keyref name="cukrászTermékekFK" refer="cukrászPK">
+        <xs:selector xpath="termekek"/>
+        <xs:field xpath="@Cuk_ID"/>
+    </xs:keyref>
+
+
+    <xs:keyref name="megrendelőTermékekFK" refer="megrendelőPK">
+        <xs:selector xpath="termekek"/>
+        <xs:field xpath="@Megr_ID"/>
+    </xs:keyref>
+
+
+    <xs:keyref name="termékekCsomagFK" refer="termekekPK">
+        <xs:selector xpath="csomag"/>
+        <xs:field xpath="@Term_ID"/>
+    </xs:keyref>
+
+
+    <xs:keyref name="szállításCsomagFK" refer="szállításPK">
+        <xs:selector xpath="csomag"/>
+        <xs:field xpath="@Szall_ID"/>
+    </xs:keyref>
+
+
+    <xs:keyref name="szállításMegrendelőFK" refer="szállításPK">
+        <xs:selector xpath="megrendelo"/>
+        <xs:field xpath="@Szall_ID"/>
+    </xs:keyref>
+
+    
+    <xs:keyref name="cukrászdaCukrászFK" refer="cukrászdaPK">
+        <xs:selector xpath="cukrasz"/>
+        <xs:field xpath="@Cukda_ID"/>
+    </xs:keyref>
+
+
+    <!-- 1:1 kapcsolat -->
+
+    <xs:unique name="tulajdonosCukrászda" >
+        <xs:selector xpath="cukraszda"/>
+        <xs:field xpath="@Tul_ID"/>
+    </xs:unique>
+
+  </xs:element>
+</xs:schema>
+
+    

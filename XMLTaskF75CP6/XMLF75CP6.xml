@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<F75CP6_Cukraszda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="XMLSchemaF75CP6.xsd">
+
+<!--- termekek -->
+
+<termekek Term_ID="1" Cukda_ID="11" Cuk_ID="01" Megr_ID="101">
+    <fajtak>Epres csokitorta</fajtak>
+    <leiras>csokis piskóta, étcsokis-tejszínes krémmel, epervelővel</leiras>
+    <ar>12000</ar>
+</termekek>
+
+<termekek Term_ID="2" Cukda_ID="12" Cuk_ID="02" Megr_ID="102">
+    <fajtak>Ishler</fajtak>
+    <leiras>linzer tészta erdeigyümölcsös dzsemmel</leiras>
+    <ar>240</ar>
+</termekek>
+
+<termekek Term_ID="3" Cukda_ID="13" Cuk_ID="03" Megr_ID="103">
+    <fajtak>Macaron</fajtak>
+    <leiras>őrölt mandulából készült korongok sós karamellás krémmel töltve</leiras>
+    <ar>300</ar>
+</termekek>
+
+
+<!--- Csomag -->
+
+<csomag Term_ID="1" Szall_ID="901">
+    <datum>2023-07-07</datum>
+</csomag>
+
+<csomag  Term_ID="2" Szall_ID="902">
+    <datum>2023-08-02</datum>
+</csomag>
+
+<csomag  Term_ID="3" Szall_ID="903">
+    <datum>2023-08-11</datum>
+</csomag>
+
+
+<!--- SZÁLLÍTÁS -->
+
+<szallitas Szall_ID="901">
+    <modja>Házhoz szállítás</modja>
+    <szallitasi_koltseg>3250</szallitasi_koltseg>
+    <megjegyzes>A csomag várhatóan 12:55 és 14:55 között érkezik meg.</megjegyzes>
+</szallitas>
+
+<szallitas Szall_ID="902">
+    <modja>Személyes átvétel</modja>
+    <szallitasi_koltseg>0</szallitasi_koltseg>
+    <megjegyzes>Nyitvatartási időben bármikor átveheti termékét.</megjegyzes>
+</szallitas>
+
+
+<szallitas Szall_ID="903">
+    <modja>Házhoz szállítás</modja>
+    <szallitasi_koltseg>2700</szallitasi_koltseg>
+    <megjegyzes>A csomag várhatóan 11:20 és 13:20 között érkezik meg.</megjegyzes>
+</szallitas>
+
+
+<!--- MEGRENDELŐ -->
+
+<megrendelo Megr_ID="101" Szall_ID="901">
+    <nev>Kis Béla</nev>
+    <cim>
+        <telepules>Edelény</telepules>
+        <utca>Uitz Béla utca</utca>
+        <hazszam>28</hazszam>
+    </cim>
+    <telefonszam>36403127492</telefonszam>
+    <telefonszam>36805551232</telefonszam>
+    <e-mail_cim>beluka33@citromail.hu</e-mail_cim>
+</megrendelo>
+
+
+<megrendelo Megr_ID="102" Szall_ID="902">
+    <nev>Afonyi Dóra</nev>
+    <cim>
+        <telepules>Kakucs</telepules>
+        <utca>Arany János utca</utca>
+        <hazszam>4</hazszam>
+    </cim>
+    <telefonszam>36803978912</telefonszam>
+    <telefonszam>36408869769</telefonszam>
+    <e-mail_cim>dora12@gmail.com</e-mail_cim>
+</megrendelo>
+
+
+<megrendelo Megr_ID="103" Szall_ID="903">
+    <nev>Stoll Barbara</nev>
+    <cim>
+        <telepules>Veresegyház</telepules>
+        <utca>Petőfi utca</utca>
+        <hazszam>48</hazszam>
+    </cim>
+    <telefonszam>36807958169</telefonszam>
+    <e-mail_cim>rebarbara18@gmail.com</e-mail_cim>
+</megrendelo>
+
+
+
+<!--- CUKRÁSZ -->
+
+<cukrasz Cuk_ID="01" Cukda_ID="11">
+    <nev>Réfi Réka</nev>
+    <minosites>2</minosites>
+    <e-mail_cim>rekuci15@gmail.com</e-mail_cim>
+</cukrasz>
+
+<cukrasz Cuk_ID="02" Cukda_ID="12">
+    <nev>Túró Rudolf</nev>
+    <minosites>3</minosites>
+    <e-mail_cim>turorudi11@gmail.com</e-mail_cim>
+</cukrasz>
+
+<cukrasz Cuk_ID="03" Cukda_ID="13">
+    <nev>Kerepesi Rebeka</nev>
+    <minosites>5</minosites>
+    <e-mail_cim>rebekabeka36@gmail.com</e-mail_cim>
+</cukrasz>
+
+
+
+<!--- CUKRÁSZDA -->
+
+<cukraszda Cukda_ID="11" Tul_ID="001">
+    <nev>Hajnali Álom</nev>
+    <nyitva>8-16</nyitva>
+</cukraszda>
+
+
+<cukraszda Cukda_ID="12" Tul_ID="002">
+    <nev>Éjféli Kívánság</nev>
+    <nyitva>8-20</nyitva>
+</cukraszda>
+
+
+<cukraszda Cukda_ID="13" Tul_ID="003">
+    <nev>Napsütéses Virágoskert</nev>
+    <nyitva>10-22</nyitva>
+</cukraszda>
+
+
+<!--- TULAJDONOS -->
+
+<tulajdonos Tul_ID="001">
+    <nev>Tompa János</nev>
+    <telefonszam>36803974892</telefonszam>
+    <e-mail_cim>tmpjni56@gmail.com</e-mail_cim>
+</tulajdonos>
+
+
+<tulajdonos Tul_ID="002">
+    <nev>Mészáros Mária</nev>
+    <telefonszam>36904258798</telefonszam>
+    <e-mail_cim>marikameszaros55@freemail.hu</e-mail_cim>
+</tulajdonos>
+
+
+<tulajdonos Tul_ID="003">
+    <nev>Várkonyi Erika</nev>
+    <telefonszam>36503459678</telefonszam>
+    <e-mail_cim>varkonyierika16@gmail.com</e-mail_cim>
+</tulajdonos>
+
+
+
+</F75CP6_Cukraszda>
