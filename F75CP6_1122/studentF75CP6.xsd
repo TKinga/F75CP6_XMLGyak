@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+
+
+<xs:complexType name="studentTípus">
+    <xs:sequence>
+        <xs:element name="keresztnev" type="xs:string" />
+        <xs:element name="vezeteknev" type="xs:string" />
+        <xs:element name="becenev" type="xs:string" />
+        <xs:element name="kor" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:integer" use="required" />
+</xs:complexType>
+
+
+
+<xs:element name="class">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="student" type="studentTípus" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <xs:key name="student_key">
+        <xs:selector xpath="student" />
+        <xs:field xpath="@id" />
+    </xs:key>
+</xs:element>
+
+</xs:schema>

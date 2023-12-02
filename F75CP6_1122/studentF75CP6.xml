@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<class xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="studentF75CP6.xsd">
+
+
+
+    <student id="1">
+        <keresztnev>Máté</keresztnev>
+        <vezeteknev>Kollár</vezeteknev>
+        <becenev>Solmai</becenev>
+        <kor>23</kor>
+    </student>
+
+
+    <student id="2">
+        <keresztnev>Kinga</keresztnev>
+        <vezeteknev>Tamás</vezeteknev>
+        <becenev>KinderKingu</becenev>
+        <kor>22</kor>
+    </student>
+
+
+    <student id="3">
+        <keresztnev>Réka</keresztnev>
+        <vezeteknev>Kollár</vezeteknev>
+        <becenev>Rékuci</becenev>
+        <kor>3</kor>
+    </student>
+
+
+</class>
