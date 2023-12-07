@@ -1,0 +1,136 @@
+{
+    "orarend": {
+        "ora": [
+            {
+                "id": "1",
+                "tipus": "előadás",
+                "targynev": "Pénzügytan",
+                "idopont": {
+                    "nap": "hétfő",
+                    "kezdes": "10:00",
+                    "befejezes": "12:00"
+                },
+                "oktato_neve": "Dr. Bozsik Sándor",
+                "helyszin": "XXXVII A3 és A5 között",
+                "szak": "BGI"
+            },
+            {
+                "id": "2",
+                "tipus": "előadás",
+                "targynev": "WEB technológiák",
+                "idopont": {
+                    "nap": "hétfő",
+                    "kezdes": "14:00",
+                    "befejezes": "16:00"
+                },
+                "oktato_neve": "Dr. Agárdi Anita",
+                "helyszin": "XXX A1 III. em. 305",
+                "szak": "BGI"
+            },
+            {
+                "id": "3",
+                "tipus": "előadás",
+                "targynev": "WEB technológiák",
+                "idopont": {
+                    "nap": "hétfő",
+                    "kezdes": "16:00",
+                    "befejezes": "18:00"
+                },
+                "oktato_neve": "Dr. Agárdi Anita",
+                "helyszin": "XXX A1 III. em. 305",
+                "szak": "BGI"
+            },
+            {
+                "id": "4",
+                "tipus": "előadás",
+                "targynev": "Számvitel",
+                "idopont": {
+                    "nap": "kedd",
+                    "kezdes": "8:00",
+                    "befejezes": "10:00"
+                },
+                "oktato_neve": "Dr. Pál Tibor",
+                "helyszin": "VIII A1 I. em. 116",
+                "szak": "BGI"
+            },
+            {
+                "id": "5",
+                "tipus": "előadás",
+                "targynev": "Mesterséges intelligencia",
+                "idopont": {
+                    "nap": "kedd",
+                    "kezdes": "10:00",
+                    "befejezes": "12:00"
+                },
+                "oktato_neve": "Kunné Dr. Tamás Judit",
+                "helyszin": "XXXII A1 magasfsz",
+                "szak": "BGI"
+            },
+            {
+                "id": "6",
+                "tipus": "előadás",
+                "targynev": "Adatkezelés XML-ben",
+                "idopont": {
+                    "nap": "kedd",
+                    "kezdes": "12:00",
+                    "befejezes": "14:00"
+                },
+                "oktato_neve": "Dr. Bednarik László",
+                "helyszin": "XXXII.ea",
+                "szak": "BGI"
+            },
+            {
+                "id": "7",
+                "tipus": "gyakorlat",
+                "targynev": "Pénzügytan",
+                "idopont": {
+                    "nap": "szerda",
+                    "kezdes": "8:00",
+                    "befejezes": "10:00"
+                },
+                "oktato_neve": "Dr. Süveges Gábor",
+                "helyszin": "A1/204 A1 II. em. 204",
+                "szak": "BGI"
+            },
+            {
+                "id": "8",
+                "tipus": "gyakorlat",
+                "targynev": "Adatkezelés XML-ben",
+                "idopont": {
+                    "nap": "szerda",
+                    "kezdes": "10:00",
+                    "befejezes": "12:00"
+                },
+                "oktato_neve": "Dr. Bednarik László",
+                "helyszin": "Inf/101 fsz.",
+                "szak": "BGI"
+            },
+            {
+                "id": "9",
+                "tipus": "gyakorlat",
+                "targynev": "Számvitel",
+                "idopont": {
+                    "nap": "szerda",
+                    "kezdes": "12:00",
+                    "befejezes": "14:00"
+                },
+                "oktato_neve": "Várkonyiné Dr. Juhász Mária",
+                "helyszin": "A3/312 III.em. XII.ea",
+                "szak": "BGI"
+            },
+            {
+                "id": "10",
+                "tipus": "gyakorlat",
+                "targynev": "Vállalati információs rendszerek fejlesztése",
+                "idopont": {
+                    "nap": "szerda",
+                    "kezdes": "14:00",
+                    "befejezes": "16:00"
+                },
+                "oktato_neve": "Dr. Sasvári Péter",
+                "helyszin": "Inf/101 fsz.",
+                "szak": "BGI"
+            }
+        ]
+    }
+}
